@@ -57,8 +57,8 @@ def parse_args():
 
 def get_shared_folder() -> Path:
     work = os.getenv("WORK")
-    if Path(f"{work}/Dcls-Audio/checkpoint").is_dir():
-        p = Path(f"{work}/Dcls-Audio/checkpoint")
+    if Path(f"{work}/DCLS-Audio/checkpoint").is_dir():
+        p = Path(f"{work}/DCLS-Audio/checkpoint")
         p.mkdir(exist_ok=True)
         return p
     raise RuntimeError("No shared folder available")
