@@ -1,9 +1,10 @@
-# [Audio classification with Dilated Convolution with Learnable Spacings](https://arxiv.org/abs/?)
+[![arXiv](https://img.shields.io/badge/arXiv-2309.13972-b31b1b.svg?style=plastic)](https://arxiv.org/abs/2309.13972)
+# [Audio classification with Dilated Convolution with Learnable Spacings](https://arxiv.org/abs/2309.13972)
 
 Official PyTorch implementation from the following paper:
 
-[Audio classification with Dilated Convolution with Learnable Spacings](https://arxiv.org/abs/?). \
-by Ismail Khalfaoui Hassani, Thomas Pellegrini and Timothée Masquelier.
+[Audio classification with Dilated Convolution with Learnable Spacings](https://arxiv.org/abs/2309.13972). \
+by Ismail Khalfaoui Hassani, Timothée Masquelier and Thomas Pellegrini.
 
 --- 
 
@@ -69,5 +70,11 @@ This project is released under the MIT license. Please see the [LICENSE](LICENSE
 ## Citation
 If you find this repository helpful, please consider citing:
 ```
+@article{khalfaoui2023audio,
+  title={Audio classification with Dilated Convolution with Learnable Spacings},
+  author={Khalfaoui-Hassani, Ismail and Masquelier, Timoth{\'e}e and Pellegrini, Thomas},
+  journal={arXiv preprint arXiv:2309.13972},
+  year={2023}
+}
 
 ```
