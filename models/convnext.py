@@ -209,6 +209,7 @@ model_urls = {
     "convnext_large_22k": "https://dl.fbaipublicfiles.com/convnext/convnext_large_22k_224.pth",
     "convnext_xlarge_22k": "https://dl.fbaipublicfiles.com/convnext/convnext_xlarge_22k_224.pth",
     "convnext_dcls_gauss_tiny_1k": "https://zenodo.org/record/8029747/files/convnext_dcls_gauss_tiny_1k_224_ema.pth",
+    "convnext_dcls_v0_tiny_1k": "https://zenodo.org/record/7112021/files/convnext_dcls_tiny_1k_224_ema.pth",
     "convnext_tiny_1k_audio": "https://zenodo.org/record/8020843/files/convnext_tiny_471mAP.pth",
 }
 
@@ -313,10 +314,10 @@ def convnext_dcls_audio_tiny17(pretrained=False, in_22k=False, **kwargs):
     # Replace all the 2D depthwise separable convolutions
     # in the model by synchronized Dcls2d ones.
     model = replace_depthwise_dcls(
-        copy.deepcopy(model), dilated_kernel_size=17, kernel_count=34, version="v1"
+        copy.deepcopy(model), dilated_kernel_size=17, kernel_count=34, version="v0"
     )
     if pretrained:
-        url = model_urls["convnext_dcls_v1_tiny_1k"]
+        url = model_urls["convnext_dcls_v0_tiny_1k"]
         checkpoint = torch.hub.load_state_dict_from_url(
             url=url, map_location="cpu", check_hash=True
         )
